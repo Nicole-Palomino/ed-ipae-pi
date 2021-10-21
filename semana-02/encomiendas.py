@@ -1,6 +1,12 @@
-nombre = input('Ingrese el nombre: ')
-dni = input('Ingrese el DNI: ')
-celular = input('Ingrese el telefono: ')
+import persona
+import datos_encomiendas
 
-persona_envia = {'nombre': nombre, 'DNI': dni, 'telefono': celular}
-persona_recibe = {'nombre': 'Gloria', 'DNI': '77851163', 'telefono': '986324785'}
+persona_envia = persona.ingreso()
+encomienda = datos_encomiendas.ingreso()
+persona_recibe = persona.ingreso()
+
+print("%s está enviando %s a %s"
+    %(persona.ver_datos(persona_envia["nombre"], persona_envia["dni"]),
+    encomienda,
+    persona.ver_datos(persona_recibe["nombre"], persona_recibe["dni"])))
+
