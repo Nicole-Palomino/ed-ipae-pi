@@ -20,7 +20,7 @@ def dividir(a, b):
     return a / b   
 
 def potencia(a, b):
-    return pow(5, 2)    
+    return pow(a, b)    
 
 #Para formatear:
 #%s texto o cadena
