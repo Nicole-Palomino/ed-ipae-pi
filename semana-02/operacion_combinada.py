@@ -20,22 +20,20 @@ def inicio():
                 go = calculadora.imprimir('operacion', calculadora.multiplicar(val1, int(lista[4])))
                 return go   
         if (lista[1] == '/'):
-            val2 = calculadora.dividir(int(lista[0]), int(lista[2])) 
-            if (lista[3] == '+'):
-                res3 = calculadora.imprimir('operacion', calculadora.sumar(val2, int(lista[4])))
-                return res3
-            if (lista[3] == '-'):
-                res4 = calculadora.imprimir('operacion', calculadora.restar(val2, int(lista[4])))
-                return res4
-            if (lista[3] == '*'):
-                res5 = calculadora.imprimir('operacion', calculadora.multiplicar(val2, int(lista[4])))
-                return res5    
-            if (lista[3] == '/'):
-                go1 = calculadora.imprimir('operacion', calculadora.dividir(val2, int(lista[4]))) 
-                return go1   
-        
-
-
+                val2 = calculadora.dividir(int(lista[0]), int(lista[2])) 
+                if (lista[3] == '+'):
+                    res3 = calculadora.imprimir('operacion', calculadora.sumar(val2, int(lista[4])))
+                    return res3
+                if (lista[3] == '-'):
+                    res4 = calculadora.imprimir('operacion', calculadora.restar(val2, int(lista[4])))
+                    return res4
+                if (lista[3] == '*'):
+                    res5 = calculadora.imprimir('operacion', calculadora.multiplicar(val2, int(lista[4])))
+                    return res5    
+                if (lista[3] == '/'):
+                    go1 = calculadora.imprimir('operacion', calculadora.dividir(val2, int(lista[4]))) 
+                    return go1   
+                   
         for c in lista:
             if (c == '*' and c == lista[3]):
                 val3 = calculadora.multiplicar(int(lista[2]), int(lista[4]))
