@@ -1,10 +1,16 @@
-pilai = [] #contiene la pila de contenedores iniciales
-pilaTemporal = [] #contiene la pila temporalmente
+#pilai = [] #contiene la pila de contenedores iniciales
+#pilaTemporal = [] #contiene la pila temporalmente
 
-def push(element):
-    pilai.append(element)
+class Pila:   
 
-def pop():
-    valor = pilai[-1]
-    del pilai[-1]
-    return valor
+    def __init__(self) -> None:
+        self.pilai = []
+        self.pilaTemporal = []
+
+    def push(self, element):
+        self.pilai.append(element)
+
+    def pop(self):
+        valor = self.pilai[-1]
+        del self.pilai[-1]
+        return valor
